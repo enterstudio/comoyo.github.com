@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: blog
 ---
 {% assign authors = site.authors %}
 <div class="row">
-	<div class="span8 white" id="posts">
+	<div class="span8" id="posts">
 		{% for post in site.posts %}
 		{% assign author = site.authors[post.author] %}
 		<article>
