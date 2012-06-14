@@ -2,6 +2,15 @@
 layout: default
 ---
 {% assign authors = site.authors %}
+
+<div id="subnav" class="visible-desktop subnav subnav-fixed-top">
+	<div class="subnav-inner">
+		<div class="container">
+			<a href="/careers" class="brand">Blog</a>
+		</div>
+	</div>
+</div>
+
 <div class="row">
 	<div class="span8" id="posts">
 		{% for post in site.posts %}
