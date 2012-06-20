@@ -9,26 +9,26 @@
     padding-top: 0;
   }
   // Unfix the navbar
-  .navbar-fixed-top,
-  .navbar-fixed-bottom {
+  .subnav-fixed-top,
+  .subnav-fixed-bottom {
     position: static;
   }
-  .navbar-fixed-top {
+  .subnav-fixed-top {
     margin-bottom: @baseLineHeight;
   }
-  .navbar-fixed-bottom {
+  .subnav-fixed-bottom {
     margin-top: @baseLineHeight;
   }
-  .navbar-fixed-top .navbar-inner,
-  .navbar-fixed-bottom .navbar-inner {
+  .subnav-fixed-top .subnav-inner,
+  .subnav-fixed-bottom .subnav-inner {
     padding: 5px;
   }
-  .navbar .container {
+  .subnav .container {
     width: auto;
     padding: 0;
   }
   // Account for brand name
-  .navbar .brand {
+  .subnav .brand {
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 0 0 -5px;
@@ -117,7 +117,7 @@
     .box-shadow(~"inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.1)");
   }
   // Pull right (secondary) nav content
-  .navbar .nav-collapse .nav.pull-right {
+  .subnav .nav-collapse .nav.pull-right {
     float: none;
     margin-left: 0;
   }
@@ -128,13 +128,13 @@
     height: 0;
   }
   // Navbar button
-  .navbar .btn-navbar {
+  .subnav .btn-navbar {
     display: block;
   }
 
   // STATIC NAVBAR
   // -------------
-  .navbar-static .navbar-inner {
+  .subnav-static .subnav-inner {
     padding-left:  10px;
     padding-right: 10px;
   }
@@ -153,7 +153,7 @@
 }
 
 @media (min-width: 980px) and (max-width: 1199px) {
-  .subnav .brand {
-    margin-left: -20px;
+  .navbar .brand {
+    margin-left: 0px;
   }
 }
