@@ -10,4 +10,13 @@ $('.carousel').carousel({
 	interval: 10000
 });
 
+$(function() {
+	$('a[href^="#"]').click(function() {
+		$('html,body').animate({ scrollTop: $(this.hash).offset().top-100}, 200);
+		return false;
+		e.preventDefault();
+	});
+});
+
+
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
