@@ -1,0 +1,374 @@
+/* EMBED COMOYO FONTS */
+
+@font-face {
+  font-family: 'ComoyoQuickRegular';
+  src: url("fonts/comoyoquickregular06-webfont.eot");
+  src: url("fonts/comoyoquickregular06-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/comoyoquickregular06-webfont.woff") format("woff"), url("fonts/comoyoquickregular06-webfont.svg#ComoyoQuickRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ComoyoQuickBold';
+  src: url("fonts/comoyoquickbold07-webfont.eot");
+  src: url("fonts/comoyoquickbold07-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/comoyoquickbold07-webfont.woff") format("woff"), url("fonts/comoyoquickbold07-webfont.svg#ComoyoQuickBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+	padding: 40px 40px 40px 40px;
+	margin: 0px 0px 0px 0px;
+
+	color: #000;
+	background: #cecece;
+
+	font-family: 'helvetica neue', helvetica, arial;
+	font-size: 11px;
+}
+
+/* START POINT FOR SCROLL */
+
+#link-start{
+	position: absolute;
+	top: 0; left: 0;
+	z-index: -100;
+}
+
+/* NAVIGATION */
+
+.navigation-wrap{
+	z-index: 100;
+
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	background: #cecece;
+
+	-moz-box-shadow: 0px 2px 5px #919191;
+	-webkit-box-shadow: 0px 2px 5px #919191;
+	box-shadow: 0px 2px 5px #919191;
+}
+.navigation{
+	padding: 30px 40px 30px 40px;
+	line-height: 35px;
+}
+.navbtn{
+	margin-right: 5px; padding: 9px 18px 9px 18px;
+	color: #f0f0f0;	background: #b0b0b0;
+
+	font-family: 'ComoyoQuickBold';
+	font-size: 10px; text-transform: uppercase;
+	text-decoration: none;
+
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	text-shadow: 1px 1px #818181;
+}
+.navbtn:hover{
+	cursor: pointer;
+	background: #959595; color: #f0f0f0;
+	text-shadow: 1px 1px #000;
+}
+.navbtn:active{
+	cursor: pointer;
+	background: #fff; color: #000;
+	text-shadow: none;
+}
+.sysbtn{
+	margin-right: 5px; padding: 9px 18px 9px 18px;
+	color: #f0f0f0;	background: #c2c2c2;
+	
+	font-family: 'ComoyoQuickBold';
+	font-size: 10px; text-transform: uppercase;
+	text-decoration: none;
+	
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	text-shadow: 1px 1px #818181;
+}
+.sysbtn:hover{
+	cursor: pointer;
+	background: #959595; color: #f0f0f0;
+	text-shadow: 1px 1px #000;
+}
+.sysbtn:active{
+	background: #fff; color: #000;
+	text-shadow: none;
+}
+
+/* FIRST PAGE */
+
+#firstpage-wrap{
+	margin: 0 -40px 0 -40px;
+	width: 100%; overflow: hidden;
+	font-family: 'ComoyoQuickRegular';
+	color: #fff;
+	
+	background: -webkit-gradient(linear, left top, right bottom, from(#1ee664), to(#138c3c));
+	background: -moz-linear-gradient(top,  #1ee664,  #138c3c);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1ee664', endColorstr='#138c3c');
+	text-shadow: 1px 1px #129741;
+	
+	-webkit-font-smoothing: antialiased;
+}
+#firstpage{
+	padding: 40px 40px 40px 40px;
+}
+#firstpage img{
+	margin-bottom: 30px;
+	max-width: 180px;
+}
+#firstpage h1{
+	margin: 0 0 10px 0;
+	font-weight: normal;
+	font-size: 55px;
+}
+#firstpage h2{
+	margin: 0 0 40px 0;
+	font-weight: normal;
+	font-size: 32px;
+}
+#firstpage h3{
+	margin: 0 0 10px 0;
+	font-family: 'ComoyoQuickBold';
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* SECTION */
+
+.section-title{
+	padding: 40px 40px 35px 40px; margin: 0 -40px 0 -40px;
+	background: #afafaf;
+	background-image: url("layout/innershadow.jpg");
+	background-repeat: repeat-x;
+	font-family: 'Helvetica Neue', Helvetica, Arial;
+	font-size: 25px; font-weight: bold;
+	overflow: auto;
+}
+
+.subcategory{
+	margin-bottom: 40px;
+}
+
+.subcategory-wrap{
+	margin-bottom: 100px;
+}
+
+.subcategory-wrap-masonry{
+	overflow: auto;
+	margin-bottom: 100px;
+}
+.buttonline{
+	margin-top: 20px;
+	overflow: auto;
+}
+.eachbutton{
+width: 200px;
+	float: left;
+	margin-right: 70px;
+	margin-bottom: 30px;
+}
+.eachbutton h2{
+	font-size: 11px;
+	margin: 5px 0 0 0;
+	font-weight: bold;
+}
+.eachbutton p{
+	margin: 2px 0 0 0;
+	font-size: 11px;
+}
+.eachlogo{
+	float: left;
+	margin-right: 70px;
+	margin-bottom: 30px;
+}
+.eachlogo h2{
+	font-size: 11px;
+	margin: 5px 0 0 0;
+	font-weight: bold;
+}
+.eachlogo p{
+	margin: 2px 0 0 0;
+	font-size: 11px;
+}
+.eachlogo p a{
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #ff1e50;
+}
+.eachlogo p a:hover{
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+.subcategory h1{
+	margin: 40px 0 0px 0;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #969696;
+}
+.subcategory-desc{
+	border-bottom: 1px dotted #969696;
+	padding: 10px 0 10px 0;
+	overflow: auto;
+}
+.subcategory-desc p{
+	width: 100%;
+	max-width: 650px;
+	line-height: 16px;
+	word-spacing: 1px;
+}
+.subcategory-desc p a{
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #ff1e50;
+}
+.subcategory-desc p a:hover{
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #000;
+}
+
+.logocol{
+	padding-bottom: 2px;
+	margin-top: 40px;
+	float: left;
+}
+.logocol h2{
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+	margin: 15px 0 5px 0;
+}
+.logocol p{
+	margin: 0;
+	word-spacing: 1px;
+}
+
+.width-300{
+	width: 300px;
+}
+
+.preview-desc{
+	border-bottom: 1px dotted #969696;
+	padding: 10px 0 10px 0;
+	overflow: auto;
+}
+.preview-desc p{
+	margin-top: 0;
+	font-weight: bold;
+	word-spacing: 1px;
+}
+.previewDesc{
+	font-weight: bold;
+	margin: 0 0 3px 0;
+}
+
+.previewbox{
+	border: 5px solid #f0f0f0;
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+	/* -moz-box-shadow: 2px 2px 2px 0px #4c4c4c;
+	-webkit-box-shadow: 2px 2px 2px 0px #4c4c4c;
+	box-shadow: 2px 2px 2px 0px #4c4c4c; */
+}
+
+/* TRANSITION SETTINGS FOR MASONRY */
+
+.masonry,
+.masonry .masonry-brick {
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+	-o-transition-duration: 0.7s;
+	transition-duration: 0.7s;
+}
+.masonry {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+.masonry .masonry-brick {
+	-webkit-transition-property: left, right, top;
+	-moz-transition-property: left, right, top;
+	-o-transition-property: left, right, top;
+	transition-property: left, right, top;
+}
+
+/* LOGIN */
+.loginform{
+	margin: 40px;
+}
+.passwordinput{
+	font-family: 'ComoyoQuickBold';
+	font-size: 12px;
+	-webkit-font-smoothing: antialiased;
+	width: 210px;
+	background: #fff; color: #000;
+	padding: 10px 14px 10px 14px;
+	border: 0;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	outline: none;
+}
+.passwordinput:hover{
+	cursor: default;
+	background: #f0f0f0;
+}
+.loginbutton{
+	font-family: 'ComoyoQuickBold';
+	-webkit-font-smoothing: antialiased;
+	margin-left: 8px;
+	background: #2d2d2d; color: #fff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#1de564), to(#01bd44));
+	background: -moz-linear-gradient(top,  #1de564,  #01bd44);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1de564', endColorstr='#01bd44');
+	text-shadow: 1px 1px #129741;
+	padding: 10px 28px 10px 28px;
+	border: 0;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	font-size: 12px;
+}
+.loginbutton:hover{
+	cursor: pointer;
+	background: -webkit-gradient(linear, left top, left bottom, from(#12fe65), to(#0fdb57));
+	background: -moz-linear-gradient(top,  #12fe65,  #0fdb57);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#12fe65', endColorstr='#0fdb57');
+}
+.loginbutton:active{
+	background: #fff; color: #000;
+	text-shadow: none;
+}
+
+/* LIGHTBOX */
+#lightbox{
+	margin: 20px 0px 0px 20px;
+	position: fixed;
+	display: none;
+	z-index: 1000;
+}
+#lightbox img{
+	margin-bottom: 15px;
+}
+#lightbox-overlay{
+	display: none;
+	background: #cecece;
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+	opacity: 0.9;
+	z-index: 800;
+}
+.lightbox-img{
+	-moz-box-shadow: 0px 2px 5px #000;
+	-webkit-box-shadow: 0px 2px 5px #000;
+	box-shadow: 0px 2px 5px #000;
+}
