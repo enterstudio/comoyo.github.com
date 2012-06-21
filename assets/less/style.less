@@ -67,10 +67,20 @@ body.careers {
 
 
 	.thumbnails li {
-		opacity: 0.3;
+		-webkit-transition: all 0.2s ease-in;
+		-moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+		-o-transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in;
+		opacity: 0.5;
 		filter: gray;
 		-webkit-filter: grayscale(1);
 		&:hover {
+			-webkit-transition: all 0.2s ease-in;
+			-moz-transition: all 0.2s ease-in;
+			-ms-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
 			opacity: 1;
 			filter: none;
 			-webkit-filter: grayscale(0);
@@ -136,6 +146,9 @@ body.careers {
 	.subtitle {
 		font-family: ComoyoQuickRegular, proxima-nova, "Helvetica Neue", Arial, sans-serif;
 		font-size: 1.2em;
+	}
+	#timeoff .thumbnails > li {
+		margin-left:10px;
 	}
 }
 
