@@ -11,7 +11,7 @@ $('.carousel').carousel({
 });
 
 $(function() {
-	$('a[href^="#"]').click(function() {
+	$('.subnav a[href^="#"]').click(function() {
 		$('html,body').animate({ scrollTop: $(this.hash).offset().top-100}, 200);
 		return false;
 		e.preventDefault();
