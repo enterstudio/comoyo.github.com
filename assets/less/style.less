@@ -103,6 +103,10 @@ body.careers {
 		cite {
 			text-align: right;
 		}
+		p {
+			line-height: 1.3em;
+			margin-bottom: 0.4em;
+		}
 	}
 
 	.profile {
@@ -117,18 +121,19 @@ body.careers {
 		display: block;
 	    counter-increment: level1;
 	    margin: 1em;
-	    margin-bottom: 2em;
+	    margin-bottom: 1.6em;
 	    &:first-child {
 	    	counter-reset: level1;
 	    }
 	}
 	ol li:before {
-	    content: counter(level1) "\A\A";
+	    content: counter(level1) "\A";
 	    white-space: pre;
 	    font-size: 2em;
+	    line-height: 1.6em;
 	}
 	ol li:after {
-	    content: "\A\A";
+	    content: "\A";
 	}
 
 	ul, ol {
