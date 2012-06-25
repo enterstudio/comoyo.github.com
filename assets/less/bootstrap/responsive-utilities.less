@@ -14,6 +14,7 @@
 .visible-phone     { display: none !important; }
 .visible-tablet    { display: none !important; }
 .visible-desktop   { } // Don't set initially
+.visible-max       { display: none; }
 .hidden-phone      { }
 .hidden-tablet     { }
 .hidden-desktop    { display: none !important; }
@@ -38,4 +39,10 @@
   // Hide everything else
   .hidden-desktop    { display: inherit !important; }
   .visible-desktop   { display: none !important ; }
+}
+
+@media (min-width: 1200px) {
+  .visible-max {
+    display: block;
+  }
 }
