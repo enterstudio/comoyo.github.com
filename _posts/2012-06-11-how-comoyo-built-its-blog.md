@@ -3,7 +3,6 @@ layout: post
 author: dagingaa
 title: How Comoyo built its blog with Jekyll and GitHub Pages
 category: jekyll
-category: jekyll
 ---
 ![Comoyo Jekyll Blog Flow Chart](/assets/img/posts/comoyo_jekyll_blog.png)
 When we set out to relaunch our company techblog, we had a few specific requirements:

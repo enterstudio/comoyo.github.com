@@ -2,7 +2,6 @@
 layout: post
 author: dagingaa
 title: How I Stopped Worrying and Love the Atom Bomb
-ingress: This is a longer ingress. Maybe have a subtitle too? Meh.
 category: Test
 ---
 ![Lorem Ipsum](http://placehold.it/750x300 "test")

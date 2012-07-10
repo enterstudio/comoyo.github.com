@@ -1,7 +1,9 @@
 <header class="page-header">
 	<h1>
 		<a href="{{post.url}}">{{post.title}}{{page.title}}</a>
+		{% if author %}
 		<small>Written by {{author.name}}</small>
+		{% endif %}
 	</h1>
 </header>
 <p class="byline muted">

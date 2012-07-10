@@ -12,7 +12,15 @@ layout: blog
 	</div>
 	<div class="span4" id="sidebar">
 		<div class="well">
-			{% include author.html %}
+			{% if author %}
+				{% include author.html %}
+			{% endif %}
+			{% if page.authors %}
+				{% for username in page.authors %}
+					{% assign author = site.authors[username] %}
+					{% include author.html %}
+				{% endfor %}
+			{% endif %}
 		</div>
 	</div>
 </div>
