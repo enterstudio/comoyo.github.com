@@ -24,6 +24,10 @@ The authorization server will, after authenticating both the user and the applic
 
 The access token works in many ways as a valet key for your expensive luxury car. The valet key only allows the driver to drive a certain distance while blocking access to the trunk, glove box  and on-board cellphone. This way the car owner (resource owner) can grant a parking attendant (client) limited access to his car by issuing the valet key (access token).
 
+It is also possible for an application to achieve [pseudo-authentication](http://en.wikipedia.org/wiki/OAuth#OpenID_vs._pseudo-authentication_using_OAuth) a user using OAuth 2.0. Because only the true resource owner (in this case, the end user) can authorize the issuing of a access token to an application, the application can be certain that if the access token obtained is valid, then the user must also be valid. This is based on trust. The application trusts the API provider to handle user authentication, and it trusts the issuing of access tokens. However, for this scheme to work, the application needs to verify the authenticity of the access token by making a request to the API providers resource server and obtaining some personally identifiable information about the user. This is the mechanism behind services such as Facebook Connect. 
+
+However, OAuth is not a complete authentication solution, and does not state how user authentication should happen on the authorization server, only that it must happen. OAuth is a service that is complementary to, but distinct from, [OpenID](http://openid.net/).
+
 #Some terminology#
 
 While the original OAuth technology is referred to as a protocol, the OAuth 2.0 is more of an authorization framework that generalizes OAuth. An important aspect of this framework is the notion of roles and how they interact.
@@ -42,7 +46,7 @@ To make things a bit easier to explain, we will go through some terminology rela
 OAuth 2.0 also defines several authorization flows, which we will explain a bit more in detail below.
 
 #How can you authorize a client#
-The abstract flow illustrated above describes how these four roles interact.
+The abstract flow illustrated below describes how these four roles interact.
 
 ![Interaction model](/assets/img/posts/oauth/general_flow.png)
 
@@ -56,3 +60,8 @@ The abstract flow illustrated above describes how these four roles interact.
 There are also many other ways of authorizing a client. The specification defines four grant types: authorization code, implicit, resource owner resource owner password credentials, and client credentials, as well as an extensibility mechanism for defining additional types. The preferred method is to use the authorization code grant, where the authorization server is used as an intermediary between the client and the resource owner.
 
 Next time, we will look into the different authorization flows in detail.
+
+#Resources#
+1. [The IETF OAuth 2.0 draft](http://tools.ietf.org/html/draft-ietf-oauth-v2-28)
+2. [Introduction to OAuth 2.0 by hueniverse](http://hueniverse.com/2010/05/introducing-oauth-2-0/)
+3. [OAuth Wikipedia entry](http://en.wikipedia.org/wiki/OAuth)
