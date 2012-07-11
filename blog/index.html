@@ -3,18 +3,29 @@ layout: blog
 ---
 {% assign authors = site.authors %}
 <div class="row">
-	<div class="span8" id="posts">
+	<div id="posts">
 		{% for post in site.posts %}
 		{% assign author = site.authors[post.author] %}
-		<article>
+		<article class="span8">
 			{% include article_header.html %}			
 			</header>
 			<p>{{ post.content }}</p>
 			<a href="{{post.url}}#disqus_thread">Comments</a>
 		</article>
+		<div class="span4" id="sidebar">
+			<div class="well">
+				{% if author %}
+					{% include author.html %}
+				{% endif %}
+				{% if post.authors %}
+					{% for username in post.authors %}
+						{% assign author = site.authors[username] %}
+						{% include author.html %}
+					{% endfor %}
+				{% endif %}
+			</div>
+		</div>
 		{% endfor %}
 	</div>
-	<div class="span4" id="sidebar">
-		{% include authors.html %}
-	</div>
+
 </div>
