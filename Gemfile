@@ -1,4 +1,4 @@
 source :rubygems
 
-gem 'jekyll'
+gem 'jekyll', '>= 1.4.3'
 gem 'nokogiri'
